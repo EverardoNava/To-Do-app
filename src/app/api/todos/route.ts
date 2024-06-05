@@ -1,4 +1,4 @@
-import prisma from '@/app/lib/prisma'
+import prisma from '@/lib/prisma'
 import { NextResponse, NextRequest } from 'next/server'
 import * as yup from 'yup';
 
@@ -39,8 +39,6 @@ export async function POST(request: Request) {
 
     } catch (error) {
         return NextResponse.json(error, { status: 400 });
-
-
     }
 
 }
@@ -55,8 +53,6 @@ export async function DELETE(request: Request) {
 
     } catch (error) {
         return NextResponse.json(error, { status: 400 });
-
-
     }
 
 }
